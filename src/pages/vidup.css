@@ -1,0 +1,57 @@
+input[type='file'] {
+    border: 5px solid white;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    padding: 10px 15px 10px 15px;
+    color: white;
+    background-color: #151E11;
+    transition: all 0.1s ease-in-out;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input[type='file']:hover {
+    cursor: pointer;
+    background-color: #b1ddfafb;
+    color: #151E11;
+}
+
+.take-file {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.sub-file-video {
+    border: 5px solid white;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    padding: 10px 15px 10px 15px;
+    color: white;
+    background-color: #151E11;
+    transition: all 0.1s ease-in-out;
+    border-radius: 10px;
+    width: max-content;
+    border: 5px solid white;
+    transition: all 0.3s ease;
+}
+
+.sub-file-video:hover {
+    border-color: #151E11;
+    background-color: white;
+    color: #151E11;
+    cursor: pointer;
+}
+
+
+.processed {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    row-gap: 10px;
+}

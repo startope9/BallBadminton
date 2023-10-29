@@ -1,0 +1,220 @@
+.umpire-option {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    column-gap: 20%;
+}
+
+.umpire-option button {
+    border: 5px solid white;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    padding: 10px 15px 10px 15px;
+    color: white;
+    background-color: #151E11;
+    transition: all 0.1s ease-in-out;
+    border-radius: 10px;
+}
+
+.umpire-option button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #151E11;
+}
+
+.umpire-option button:active {
+    border-color: #151E11;
+}
+
+.team1-score input {
+    text-align: center;
+    width: max-content;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
+
+.team1-det {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+
+.team1-det label {
+    font-size: 30px;
+    font-family: Geneva;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+
+.team2-det {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+
+.team2-score input {
+    text-align: center;
+    width: max-content;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
+
+.team2-det label {
+    font-size: 30px;
+    font-family: Geneva;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+
+.disp-det {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+
+.sub-but {
+    border: 5px solid white;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    padding: 10px 15px 10px 15px;
+    color: white;
+    background-color: #151E11;
+    transition: all 0.1s ease-in-out;
+    border-radius: 10px;
+}
+
+.sub-but:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #151E11;
+    border: 1px solid #151E11;
+}
+
+.sub-but:active {
+    border-color: #151E11;
+}
+
+.icon {
+    background-color: #151E11 !important;
+}
+
+.contain-common {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.next-hand-serve label {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.icone {
+    background-color: #69c0fb !important;
+}
+
+.next-hand-serve {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+}
+
+.next-hand-change {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 5%;
+}
+
+.start {
+    margin: 5%;
+}
+
+.suggest {
+    margin: 0% 0% 5% 1%;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+.table-type {
+    padding: 2% 5% 2% 5%;
+    font-size: 16px;
+    font-family: monospace;
+    width: 200%;
+    color: #151E11;
+}
+
+.table-type:nth-child(even) {
+    background-color: #69c0fb;
+    border-radius: 50px;
+}
+
+.table-type:nth-child(odd) {
+    background-color: #b2dcf8;
+    border-radius: 50px;
+}
+
+
+.field-adjust {
+    width: max-content;
+    height: max-content;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: none;
+    border-top: 2px inset #69c0fb;
+    background-image: linear-gradient(to bottom, white, #20261dad);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #151E11;
+    margin-bottom: 20px;
+}
+
+.all-matches {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    color: #151E11;
+
+}
+
+.disp-score {
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    padding: 4%;
+}
+
+#old-mat {
+    display: flex !important;
+    flex-direction: row;
+    column-gap: 50px;
+    row-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.conc-score {
+    padding-bottom: 20px;
+    color: #69c0fb;
+}

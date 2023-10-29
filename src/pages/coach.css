@@ -1,0 +1,32 @@
+.coach-option {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    column-gap: 10%;
+}
+
+.coach-option button {
+    border: 2px solid white;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    padding: 10px 15px 10px 15px;
+    color: white;
+    /* background-color: #151E11; */
+    transition: all 0.1s ease-in-out;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #8fd0fffb, #151E11);
+}
+
+.coach-option button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #151E11;
+    outline: 5px solid #6fbdf4fb;
+}
+
+.coach-option button:active {
+    border-color: #151E11;
+}

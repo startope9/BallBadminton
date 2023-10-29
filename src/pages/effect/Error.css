@@ -1,0 +1,8 @@
+#error-page {
+    color: #151E11;
+    margin-top: 4%;
+}
+
+#error-page a {
+    text-decoration: none;
+}
