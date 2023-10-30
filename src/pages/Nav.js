@@ -9,10 +9,10 @@ export default function Nav({ value = 0 }) {
 
     const handleLogout = () => {
         (async () => {
-            await fetch('http://localhost:5000/logout', {
+            await fetch('https://bbserver.onrender.com/logout', {
                 method: 'POST',
                 headers: {
-                    'Access-Control-Allow-Origin': '*'
+                    'Access-Control-Allow-Origin': 'https://bbserver.onrender.com/'
                 },
                 credentials: 'include'
             })

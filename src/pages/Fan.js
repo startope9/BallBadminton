@@ -18,10 +18,10 @@ export default function Fan() {
     useEffect(() => {
 
         (async () => {
-            await fetch('http://localhost:5000/getLiveScore', {
+            await fetch('https://bbserver.onrender.com/getLiveScore', {
                 method: 'POST',
                 headers: {
-                    'Access-Control-Allow-Origin': '*',
+                    'Access-Control-Allow-Origin': 'https://bbserver.onrender.com/',
                 },
                 credentials: 'include'
             })

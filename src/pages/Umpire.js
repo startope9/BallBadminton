@@ -41,10 +41,10 @@ export default function Umpire() {
 
     useEffect(() => {
         (async () => {
-            await fetch('http://localhost:5000/getSessionInfo', {
+            await fetch('https://bbserver.onrender.com/getSessionInfo', {
                 method: 'POST',
                 headers: {
-                    'Access-Control-Allow-Origin': '*'
+                    'Access-Control-Allow-Origin': 'https://bbserver.onrender.com/'
                 },
                 credentials: 'include'
             })
@@ -66,10 +66,10 @@ export default function Umpire() {
         document.getElementById('old-mat').style.display = 'block';
         document.getElementById('new-mat').style.display = 'none';
         (async () => {
-            await fetch('http://localhost:5000/getAllMatches', {
+            await fetch('https://bbserver.onrender.com/getAllMatches', {
                 method: 'POST',
                 headers: {
-                    'Access-Control-Access-Origin': '*',
+                    'Access-Control-Access-Origin': 'https://bbserver.onrender.com/',
                 },
                 credentials: 'include'
             })
@@ -96,10 +96,10 @@ export default function Umpire() {
     const handleTeam1 = () => {
         (
             async () => {
-                await fetch('http://localhost:5000/team/1', {
+                await fetch('https://bbserver.onrender.com/team/1', {
                     method: "POST",
                     headers: {
-                        'Access-Control-Allow-Origin': '*',
+                        'Access-Control-Allow-Origin': 'https://bbserver.onrender.com/',
                         'Content-type': 'application/json'
                     },
                     credentials: 'include',
@@ -132,10 +132,10 @@ export default function Umpire() {
     const handleTeam2 = () => {
         (
             async () => {
-                await fetch('http://localhost:5000/team/2', {
+                await fetch('https://bbserver.onrender.com/team/2', {
                     method: "POST",
                     headers: {
-                        'Access-Control-Allow-Origin': '*',
+                        'Access-Control-Allow-Origin': 'https://bbserver.onrender.com/',
                         'Content-type': 'application/json'
                     },
                     credentials: 'include',
@@ -191,10 +191,10 @@ export default function Umpire() {
 
     const sendServer = (teamNo, score) => {
         (async () => {
-            await fetch('http://localhost:5000/score/' + teamNo, {
+            await fetch('https://bbserver.onrender.com/score/' + teamNo, {
                 method: 'POST',
                 headers: {
-                    'Access-Control-Allow-Origin': '*',
+                    'Access-Control-Allow-Origin': 'https://bbserver.onrender.com/',
                     'Content-type': 'application/json'
                 },
                 credentials: 'include',
@@ -225,11 +225,11 @@ export default function Umpire() {
         setArr1(temparr);
 
         (async () => {
-            await fetch('http://localhost:5000/uploadHead', {
+            await fetch('https://bbserver.onrender.com/uploadHead', {
 
                 method: 'POST',
                 headers: {
-                    'Access-Control-Allow-Origin': '*',
+                    'Access-Control-Allow-Origin': 'https://bbserver.onrender.com/',
                     'Content-type': 'application/json'
                 },
                 credentials: 'include',
@@ -261,11 +261,11 @@ export default function Umpire() {
         setArr2(temparr);
 
         (async () => {
-            await fetch('http://localhost:5000/uploadHead', {
+            await fetch('https://bbserver.onrender.com/uploadHead', {
 
                 method: 'POST',
                 headers: {
-                    'Access-Control-Allow-Origin': '*',
+                    'Access-Control-Allow-Origin': 'https://bbserver.onrender.com/',
                     'Content-type': 'application/json'
                 },
                 credentials: 'include',
@@ -351,10 +351,10 @@ export default function Umpire() {
                                     <Button variant="contained" style={{ 'backgroundColor': '#151E11' }}
                                         onClick={() => {
                                             (async () => {
-                                                await fetch('http://localhost:5000/number', {
+                                                await fetch('https://bbserver.onrender.com/number', {
                                                     method: 'POST',
                                                     headers: {
-                                                        'Access-Control-Allow-Origin': '*',
+                                                        'Access-Control-Allow-Origin': 'https://bbserver.onrender.com/',
                                                         'Content-type': 'application/json'
                                                     },
                                                     credentials: 'include',
@@ -473,10 +473,10 @@ export default function Umpire() {
 
                             onClick={() => {
                                 (async () => {
-                                    await fetch('http://localhost:5000/finish_match', {
+                                    await fetch('https://bbserver.onrender.com/finish_match', {
                                         method: 'POST',
                                         headers: {
-                                            'Access-Control-Allow-Origin': '*',
+                                            'Access-Control-Allow-Origin': 'https://bbserver.onrender.com/',
                                         },
                                         credentials: 'include',
                                     })

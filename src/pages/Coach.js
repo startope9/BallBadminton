@@ -26,10 +26,10 @@ export default function Coach() {
 
     useEffect(() => {
         (async () => {
-            await fetch('http://localhost:5000/getSessionInfo', {
+            await fetch('https://bbserver.onrender.com/getSessionInfo', {
                 method: 'POST',
                 headers: {
-                    'Access-Control-Allow-Origin': '*'
+                    'Access-Control-Allow-Origin': 'https://bbserver.onrender.com/'
                 },
                 credentials: 'include'
             })
@@ -52,10 +52,10 @@ export default function Coach() {
         setProcessedVideoLink('');
         setProcessingMessage('');
         (async () => {
-            await fetch('http://localhost:5000/remove_dir', {
+            await fetch('https://bbserver.onrender.com/remove_dir', {
                 method: 'POST',
                 headers: {
-                    'Access-Control-Access-Origin': '*'
+                    'Access-Control-Access-Origin': 'https://bbserver.onrender.com/'
                 },
                 credentials: 'include'
             })
@@ -78,9 +78,9 @@ export default function Coach() {
             formData.append('video', selectedFile);
 
             try {
-                await axios.post('http://localhost:5000/api/upload/' + selectedopt, formData, {
+                await axios.post('https://bbserver.onrender.com/api/upload/' + selectedopt, formData, {
                     headers: {
-                        'Access-Control-Allow-Origin': '*',
+                        'Access-Control-Allow-Origin': 'https://bbserver.onrender.com/',
                         'Content-Type': 'multipart/form-data',
                     },
                     withCredentials: true
@@ -90,7 +90,7 @@ export default function Coach() {
                 // Set a timeout to simulate processing
                 setTimeout(() => {
                     setProcessingMessage('Processing complete.');
-                    setProcessedVideoLink(`http://localhost:5000/api/get_processed_video/${user[0]}/${selectedopt}/processed_${selectedFile.name}`);
+                    setProcessedVideoLink(`https://bbserver.onrender.com/api/get_processed_video/${user[0]}/${selectedopt}/processed_${selectedFile.name}`);
                 }, 3000);
             } catch (error) {
                 console.error('Error uploading video:', error);

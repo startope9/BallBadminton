@@ -30,11 +30,11 @@ export default function Home() {
         //code to send to backend
 
         (async () => {
-            await fetch('http://localhost:5000/login/' + select, {
+            await fetch('https://bbserver.onrender.com/login/' + select, {
 
                 method: "POST",
                 headers: {
-                    'Access-Control-Allow-Origin': '*',
+                    'Access-Control-Allow-Origin': 'https://bbserver.onrender.com/',
                     'Content-type': 'application/json'
                 },
                 credentials: 'include',
