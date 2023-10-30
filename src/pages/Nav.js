@@ -12,7 +12,8 @@ export default function Nav({ value = 0 }) {
             await fetch('https://bbserver.onrender.com/logout', {
                 method: 'POST',
                 headers: {
-                    'Access-Control-Allow-Origin': 'https://bbserver.onrender.com/'
+                    'Access-Control-Allow-Origin': 'https://bbserver.onrender.com',
+                    'Content-type': 'application/json'
                 },
                 credentials: 'include'
             })

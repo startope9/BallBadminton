@@ -44,7 +44,8 @@ export default function Umpire() {
             await fetch('https://bbserver.onrender.com/getSessionInfo', {
                 method: 'POST',
                 headers: {
-                    'Access-Control-Allow-Origin': 'https://bbserver.onrender.com/'
+                    'Access-Control-Allow-Origin': 'https://bbserver.onrender.com',
+                    'Content-type': 'application/json'
                 },
                 credentials: 'include'
             })
@@ -69,7 +70,8 @@ export default function Umpire() {
             await fetch('https://bbserver.onrender.com/getAllMatches', {
                 method: 'POST',
                 headers: {
-                    'Access-Control-Access-Origin': 'https://bbserver.onrender.com/',
+                    'Access-Control-Access-Origin': 'https://bbserver.onrender.com',
+                    'Content-type': 'application/json'
                 },
                 credentials: 'include'
             })
@@ -99,7 +101,7 @@ export default function Umpire() {
                 await fetch('https://bbserver.onrender.com/team/1', {
                     method: "POST",
                     headers: {
-                        'Access-Control-Allow-Origin': 'https://bbserver.onrender.com/',
+                        'Access-Control-Allow-Origin': 'https://bbserver.onrender.com',
                         'Content-type': 'application/json'
                     },
                     credentials: 'include',
@@ -135,7 +137,7 @@ export default function Umpire() {
                 await fetch('https://bbserver.onrender.com/team/2', {
                     method: "POST",
                     headers: {
-                        'Access-Control-Allow-Origin': 'https://bbserver.onrender.com/',
+                        'Access-Control-Allow-Origin': 'https://bbserver.onrender.com',
                         'Content-type': 'application/json'
                     },
                     credentials: 'include',
@@ -194,7 +196,7 @@ export default function Umpire() {
             await fetch('https://bbserver.onrender.com/score/' + teamNo, {
                 method: 'POST',
                 headers: {
-                    'Access-Control-Allow-Origin': 'https://bbserver.onrender.com/',
+                    'Access-Control-Allow-Origin': 'https://bbserver.onrender.com',
                     'Content-type': 'application/json'
                 },
                 credentials: 'include',
@@ -229,7 +231,7 @@ export default function Umpire() {
 
                 method: 'POST',
                 headers: {
-                    'Access-Control-Allow-Origin': 'https://bbserver.onrender.com/',
+                    'Access-Control-Allow-Origin': 'https://bbserver.onrender.com',
                     'Content-type': 'application/json'
                 },
                 credentials: 'include',
@@ -265,7 +267,7 @@ export default function Umpire() {
 
                 method: 'POST',
                 headers: {
-                    'Access-Control-Allow-Origin': 'https://bbserver.onrender.com/',
+                    'Access-Control-Allow-Origin': 'https://bbserver.onrender.com',
                     'Content-type': 'application/json'
                 },
                 credentials: 'include',
@@ -354,7 +356,7 @@ export default function Umpire() {
                                                 await fetch('https://bbserver.onrender.com/number', {
                                                     method: 'POST',
                                                     headers: {
-                                                        'Access-Control-Allow-Origin': 'https://bbserver.onrender.com/',
+                                                        'Access-Control-Allow-Origin': 'https://bbserver.onrender.com',
                                                         'Content-type': 'application/json'
                                                     },
                                                     credentials: 'include',
@@ -476,7 +478,8 @@ export default function Umpire() {
                                     await fetch('https://bbserver.onrender.com/finish_match', {
                                         method: 'POST',
                                         headers: {
-                                            'Access-Control-Allow-Origin': 'https://bbserver.onrender.com/',
+                                            'Access-Control-Allow-Origin': 'https://bbserver.onrender.com',
+                                            'Content-type': 'application/json'
                                         },
                                         credentials: 'include',
                                     })

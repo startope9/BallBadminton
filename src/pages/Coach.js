@@ -29,7 +29,8 @@ export default function Coach() {
             await fetch('https://bbserver.onrender.com/getSessionInfo', {
                 method: 'POST',
                 headers: {
-                    'Access-Control-Allow-Origin': 'https://bbserver.onrender.com/'
+                    'Access-Control-Allow-Origin': 'https://bbserver.onrender.com',
+                    'Content-type': 'application/json'
                 },
                 credentials: 'include'
             })
@@ -55,7 +56,8 @@ export default function Coach() {
             await fetch('https://bbserver.onrender.com/remove_dir', {
                 method: 'POST',
                 headers: {
-                    'Access-Control-Access-Origin': 'https://bbserver.onrender.com/'
+                    'Access-Control-Access-Origin': 'https://bbserver.onrender.com',
+                    'Content-type': 'application/json'
                 },
                 credentials: 'include'
             })
@@ -80,7 +82,7 @@ export default function Coach() {
             try {
                 await axios.post('https://bbserver.onrender.com/api/upload/' + selectedopt, formData, {
                     headers: {
-                        'Access-Control-Allow-Origin': 'https://bbserver.onrender.com/',
+                        'Access-Control-Allow-Origin': 'https://bbserver.onrender.com',
                         'Content-Type': 'multipart/form-data',
                     },
                     withCredentials: true
